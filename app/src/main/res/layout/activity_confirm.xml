@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="madroid.bisioota.ConfirmActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/success_image"
+        android:src="@drawable/good_or_tick"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your message has been Successfully Sent."
+        android:id="@+id/success_msg"
+        android:layout_below="@+id/success_image"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="25dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="20dp" />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:background="#3F51B5"
+      android:layout_alignParentBottom="true">
+
+      <Button
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:text="Exit"
+          android:id="@+id/confirm_exit_button"
+          android:layout_weight="0.5"
+          android:background="@null"
+          android:textColor="#ffffff" />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:text="|"
+          android:textColor="#FFFFFF"
+          android:background="@null"
+          android:textSize="30sp"
+          android:gravity="center"
+          android:layout_margin="2dp"/>
+
+      <Button
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:text="Check History"
+          android:id="@+id/history_button"
+          android:layout_weight="0.5"
+          android:background="@null"
+          android:textColor="#ffffff"/>
+  </LinearLayout>
+
+</RelativeLayout>
