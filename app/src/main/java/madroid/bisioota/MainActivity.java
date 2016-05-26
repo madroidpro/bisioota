@@ -105,6 +105,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // Initiating Menu XML file (menu.xml)
+
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        menu.getItem(0).setVisible(false);
+        return super.onPrepareOptionsMenu(menu);
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
     {
